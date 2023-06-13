@@ -34,7 +34,7 @@ comment. All the things that come before it will not be obfuscated, and will be 
 
 ## How it works
 The obfucator applies a pipeline of four abstract syntax tree transformations.
-1. All the lambda functions definitions and function applications are transformed into their curryed version, to enable doing partial application. This is crucial for example for achieving recursion using the fixpoint combinator.
+1. All the lambda functions definitions and function applications are transformed into their curried version, to enable doing partial application. This is crucial for example for achieving recursion using the fixpoint combinator.
 2. All the constant symbols and function applications are recursively extracted from the original expressions and put into their own definitions. Since the function calls are curried, function calls with multiple arguments are split between different assignments.
 3. All assignments are converted into their lambda forms, exploiting lambda variable binding.
 4. All names are obfuscated and transformed into meaningless numbers.
