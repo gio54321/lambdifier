@@ -46,9 +46,9 @@ The flag `-d` basically applies an inverse transformation of the third step, mak
 ## Limitations
 
 Input scripts have to respect certain conditions, namely
-- there must be only of assignments at top level,
-- only lambda functions are supported,
-- recursion is not supported, but you can get recursion by using the fixpoint point combinator.
-- Assignments must have unique names (basically only let semantics is supported without shadowing).
-- Other random python features break this tool pretty bad, so use with caution.
+- there must be only assignments at top level,
+- only lambda functions are supported (who would have guessed),
+- recursion is not supported, but you can get recursion by using the fixpoint point combinator,
+- assignments must have unique names (basically only let semantics is supported without shadowing),
+- other random python features break this tool pretty bad, so use with caution.
 
