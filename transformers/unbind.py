@@ -1,7 +1,5 @@
 import ast
 
-from pyparsing import Any
-
 """
 Transform this:
 
@@ -25,7 +23,7 @@ class UnbindTransformer(ast.NodeTransformer):
         super().__init__()
         self.statements = []
     
-    def visit_Module(self, node) -> Any:
+    def visit_Module(self, node):
         self.generic_visit(node)
         # return the statements
         node.body = self.statements
